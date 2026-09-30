@@ -1,0 +1,17 @@
+{
+  "2": {"class_type":"SaveImage","inputs":{"filename_prefix":"poster_v1_qwen_api","images":["17",0]},"_meta":{"title":"保存海报"}},
+  "3": {"class_type":"PrimitiveStringMultiline","inputs":{"value":"一张高端电商香水商业主视觉：黑色大理石背景，黑金色调，中央偏下摆放一瓶黑色玻璃香水，金色轮廓光和柔和体积光；顶部保留大面积干净留白，右下角保留价格区域。画面简洁、奢华、商业摄影质感。画面中绝对不要出现任何文字、汉字、字母、数字、价格、Logo、水印或标识。"},"_meta":{"title":"海报提示词"}},
+  "4": {"class_type":"PrimitiveStringMultiline","inputs":{"value":"低清晰度，杂乱构图，水印，文字，汉字，字母，数字，价格，Logo，标识，乱码，排版，变形瓶身，重复商品，过度饱和"},"_meta":{"title":"负面提示词"}},
+  "5": {"class_type":"UnetLoaderGGUF","inputs":{"unet_name":"z_image_turbo-Q8_0.gguf"},"_meta":{"title":"本地 Z-Image UNet"}},
+  "6": {"class_type":"CLIPLoaderGGUF","inputs":{"clip_name":"Qwen3-4B-UD-Q6_K_XL.gguf","type":"lumina2"},"_meta":{"title":"本地 Qwen 编码器"}},
+  "7": {"class_type":"VAELoader","inputs":{"vae_name":"z-image-ae.safetensors"},"_meta":{"title":"本地 Z-Image VAE"}},
+  "8": {"class_type":"ModelSamplingAuraFlow","inputs":{"shift":1.73,"sampling":"flow","model":["5",0]},"_meta":{"title":"本地 AuraFlow 采样"}},
+  "9": {"class_type":"CLIPTextEncode","inputs":{"text":["3",0],"clip":["6",0]},"_meta":{"title":"本地正向条件"}},
+  "10": {"class_type":"ConditioningZeroOut","inputs":{"conditioning":["9",0]},"_meta":{"title":"本地负向条件"}},
+  "11": {"class_type":"EmptySD3LatentImage","inputs":{"width":720,"height":1280,"batch_size":1},"_meta":{"title":"本地海报 Latent"}},
+  "12": {"class_type":"KSampler","inputs":{"seed":836778108486624,"steps":9,"cfg":1,"sampler_name":"euler","scheduler":"simple","denoise":1,"model":["8",0],"positive":["9",0],"negative":["10",0],"latent_image":["11",0]},"_meta":{"title":"本地采样器"}},
+  "13": {"class_type":"VAEDecode","inputs":{"samples":["12",0],"vae":["7",0]},"_meta":{"title":"本地 VAE 解码"}},
+  "17": {"class_type":"DrawText+","inputs":{"text":["22",0],"font":"NotoSansSC-VF.ttf","size":58,"color":"#F6D58A","background_color":"#00000000","shadow_distance":3,"shadow_blur":4,"shadow_color":"#000000","horizontal_align":"center","vertical_align":"top","offset_x":0,"offset_y":85,"direction":"ltr","img_composite":["13",0]},"_meta":{"title":"中文标题渲染"}},
+  "20": {"class_type":"PrimitiveStringMultiline","inputs":{"value":"你是中文电商海报文案师。请为“高端香水”写两行自然、通顺、语义完整的中文文案。风格：黑金奢华；卖点：馥郁、持久、层次感。第一行是主标题，4到8个汉字，必须是完整短语；第二行是副标题，8到12个汉字，必须是完整句子或自然短语。只输出两行纯文本，不要引号、编号、解释、英文、数字或价格。参考表达：馥郁鎏金，持久留香 / 层次香气，邂逅高级质感。"},"_meta":{"title":"商品与促销信息（给文案API）"}},
+  "22": {"class_type":"DashScopeQwenText","inputs":{"prompt":["20",0],"system_prompt":"你是专业中文电商海报文案师。严格按用户要求，只输出最终文案，不要解释、编号、引号或 Markdown。","model":"qwen-max","region":"China","api_key":"","temperature":0.4,"max_tokens":96},"_meta":{"title":"Qwen 官方 API 文案生成"}}
+}
