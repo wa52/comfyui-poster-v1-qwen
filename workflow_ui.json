@@ -1,0 +1,1875 @@
+{
+  "id": "8b1f4481-55b3-41e1-b185-d5c6d333d4ab",
+  "revision": 0,
+  "last_node_id": 30,
+  "last_link_id": 38,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "QwenImageTextToImageApi",
+      "pos": [
+        280,
+        180
+      ],
+      "size": [
+        400,
+        334
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 4,
+      "inputs": [
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMFY_DYNAMICCOMBO_V3",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt",
+          "name": "model.prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "model.prompt"
+          },
+          "link": 1
+        },
+        {
+          "localized_name": "negative_prompt",
+          "name": "model.negative_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "model.negative_prompt"
+          },
+          "link": 2
+        },
+        {
+          "localized_name": "width",
+          "name": "model.width",
+          "type": "INT",
+          "widget": {
+            "name": "model.width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "height",
+          "name": "model.height",
+          "type": "INT",
+          "widget": {
+            "name": "model.height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "n",
+          "name": "n",
+          "type": "INT",
+          "widget": {
+            "name": "n"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "seed",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "prompt_extend",
+          "name": "prompt_extend",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "prompt_extend"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "watermark",
+          "name": "watermark",
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "watermark"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": []
+        }
+      ],
+      "title": "Qwen Image API 海报主视觉",
+      "properties": {
+        "Node name for S&R": "QwenImageTextToImageApi"
+      },
+      "widgets_values": [
+        "qwen-image-3.0-pro",
+        "",
+        "",
+        1024,
+        1024,
+        1,
+        1847077095,
+        "randomize",
+        true,
+        false
+      ],
+      "widgets_values_named": {
+        "model": "qwen-image-3.0-pro",
+        "model.prompt": "",
+        "model.negative_prompt": "",
+        "model.width": 1024,
+        "model.height": 1024,
+        "n": 1,
+        "seed": 1847077095,
+        "control_after_generate": "randomize",
+        "prompt_extend": true,
+        "watermark": false
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 3,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -220,
+        120
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "值",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "字符串",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            1,
+            7
+          ]
+        }
+      ],
+      "title": "海报提示词",
+      "properties": {
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "高端电商香水商业主视觉 9比16 画面中只出现一瓶黑色玻璃香水 不要任何文字汉字字母数字价格Logo水印或标识 保留顶部和底部干净留白 黑色大理石背景 金色轮廓光 奢华商业摄影质感 请在批量生成时随机呈现不同视觉风格 例如黑金奢华 极简白底 东方水墨 霓虹未来 每张保持产品清晰完整"
+      ],
+      "widgets_values_named": {
+        "value": "高端电商香水商业主视觉 9比16 画面中只出现一瓶黑色玻璃香水 不要任何文字汉字字母数字价格Logo水印或标识 保留顶部和底部干净留白 黑色大理石背景 金色轮廓光 奢华商业摄影质感 请在批量生成时随机呈现不同视觉风格 例如黑金奢华 极简白底 东方水墨 霓虹未来 每张保持产品清晰完整"
+      }
+    },
+    {
+      "id": 4,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -220,
+        340
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "值",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "字符串",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            2,
+            37
+          ]
+        }
+      ],
+      "title": "负面提示词",
+      "properties": {
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "低清晰度，杂乱构图，水印，文字，汉字，字母，数字，价格，Logo，标识，乱码，排版，品牌名，商品名，伪文字，底部文字，变形瓶身，重复商品，过度饱和"
+      ],
+      "widgets_values_named": {
+        "value": "低清晰度，杂乱构图，水印，文字，汉字，字母，数字，价格，Logo，标识，乱码，排版，品牌名，商品名，伪文字，底部文字，变形瓶身，重复商品，过度饱和"
+      }
+    },
+    {
+      "id": 5,
+      "type": "UnetLoaderGGUF",
+      "pos": [
+        240,
+        340
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "unet_name",
+          "name": "unet_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "unet_name"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "模型",
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            4
+          ]
+        }
+      ],
+      "title": "本地 Z-Image UNet",
+      "properties": {
+        "Node name for S&R": "UnetLoaderGGUF"
+      },
+      "widgets_values": [
+        "z_image_turbo-Q8_0.gguf"
+      ],
+      "widgets_values_named": {
+        "unet_name": "z_image_turbo-Q8_0.gguf"
+      }
+    },
+    {
+      "id": 6,
+      "type": "CLIPLoaderGGUF",
+      "pos": [
+        570,
+        340
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "clip_name",
+          "name": "clip_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "clip_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "type",
+          "name": "type",
+          "type": "COMBO",
+          "widget": {
+            "name": "type"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "CLIP",
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            6,
+            36
+          ]
+        }
+      ],
+      "title": "本地 Qwen 编码器",
+      "properties": {
+        "Node name for S&R": "CLIPLoaderGGUF"
+      },
+      "widgets_values": [
+        "Qwen3-4B-UD-Q6_K_XL.gguf",
+        "lumina2"
+      ],
+      "widgets_values_named": {
+        "clip_name": "Qwen3-4B-UD-Q6_K_XL.gguf",
+        "type": "lumina2"
+      }
+    },
+    {
+      "id": 7,
+      "type": "VAELoader",
+      "pos": [
+        900,
+        340
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "vae名称",
+          "name": "vae_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "vae_name"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "VAE",
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            13
+          ]
+        }
+      ],
+      "title": "本地 Z-Image VAE",
+      "properties": {
+        "Node name for S&R": "VAELoader"
+      },
+      "widgets_values": [
+        "z-image-ae.safetensors"
+      ],
+      "widgets_values_named": {
+        "vae_name": "z-image-ae.safetensors"
+      }
+    },
+    {
+      "id": 8,
+      "type": "ModelSamplingAuraFlow",
+      "pos": [
+        1230,
+        340
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "模型",
+          "name": "model",
+          "type": "MODEL",
+          "link": 4
+        },
+        {
+          "localized_name": "移位",
+          "name": "shift",
+          "type": "FLOAT",
+          "widget": {
+            "name": "shift"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "sampling",
+          "name": "sampling",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "sampling"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "模型",
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            5
+          ]
+        }
+      ],
+      "title": "本地 AuraFlow 采样",
+      "properties": {
+        "Node name for S&R": "ModelSamplingAuraFlow"
+      },
+      "widgets_values": [
+        1.73,
+        "flow"
+      ],
+      "widgets_values_named": {
+        "shift": 1.73,
+        "sampling": "flow"
+      }
+    },
+    {
+      "id": 9,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1560,
+        340
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 6
+        },
+        {
+          "localized_name": "文本",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 7
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "条件",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            8,
+            10
+          ]
+        }
+      ],
+      "title": "本地正向条件",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "widgets_values_named": {
+        "text": ""
+      }
+    },
+    {
+      "id": 10,
+      "type": "ConditioningZeroOut",
+      "pos": [
+        2020,
+        340
+      ],
+      "size": [
+        140,
+        26
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "条件",
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 8
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "条件",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": []
+        }
+      ],
+      "title": "本地负向条件",
+      "properties": {
+        "Node name for S&R": "ConditioningZeroOut"
+      }
+    },
+    {
+      "id": 11,
+      "type": "EmptySD3LatentImage",
+      "pos": [
+        2220,
+        340
+      ],
+      "size": [
+        270,
+        106
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "宽度",
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "高度",
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "批量大小",
+          "name": "batch_size",
+          "type": "INT",
+          "widget": {
+            "name": "batch_size"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "Latent",
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            11
+          ]
+        }
+      ],
+      "title": "本地海报 Latent",
+      "properties": {
+        "Node name for S&R": "EmptySD3LatentImage"
+      },
+      "widgets_values": [
+        720,
+        1280,
+        4
+      ],
+      "widgets_values_named": {
+        "width": 720,
+        "height": 1280,
+        "batch_size": 4
+      }
+    },
+    {
+      "id": 12,
+      "type": "KSampler",
+      "pos": [
+        2550,
+        340
+      ],
+      "size": [
+        270,
+        262
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "模型",
+          "name": "model",
+          "type": "MODEL",
+          "link": 5
+        },
+        {
+          "localized_name": "正面条件",
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 10
+        },
+        {
+          "localized_name": "负面条件",
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 38
+        },
+        {
+          "localized_name": "Latent图像",
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 11
+        },
+        {
+          "localized_name": "种子",
+          "name": "seed",
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "步数",
+          "name": "steps",
+          "type": "INT",
+          "widget": {
+            "name": "steps"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cfg",
+          "name": "cfg",
+          "type": "FLOAT",
+          "widget": {
+            "name": "cfg"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "采样器名称",
+          "name": "sampler_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "sampler_name"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "调度器",
+          "name": "scheduler",
+          "type": "COMBO",
+          "widget": {
+            "name": "scheduler"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "降噪",
+          "name": "denoise",
+          "type": "FLOAT",
+          "widget": {
+            "name": "denoise"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "Latent",
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            12
+          ]
+        }
+      ],
+      "title": "本地采样器",
+      "properties": {
+        "Node name for S&R": "KSampler"
+      },
+      "widgets_values": [
+        923026266819351,
+        "randomize",
+        9,
+        1,
+        "euler",
+        "simple",
+        1
+      ],
+      "widgets_values_named": {
+        "seed": 923026266819351,
+        "control_after_generate": "randomize",
+        "steps": 9,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      }
+    },
+    {
+      "id": 13,
+      "type": "VAEDecode",
+      "pos": [
+        2880,
+        340
+      ],
+      "size": [
+        140,
+        46
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "Latent",
+          "name": "samples",
+          "type": "LATENT",
+          "link": 12
+        },
+        {
+          "localized_name": "vae",
+          "name": "vae",
+          "type": "VAE",
+          "link": 13
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            17
+          ]
+        }
+      ],
+      "title": "本地 VAE 解码",
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      }
+    },
+    {
+      "id": 17,
+      "type": "DrawText+",
+      "pos": [
+        3300,
+        1250
+      ],
+      "size": [
+        400,
+        396
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "img_composite",
+          "name": "img_composite",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 17
+        },
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 30
+        },
+        {
+          "localized_name": "font",
+          "name": "font",
+          "type": "COMBO",
+          "widget": {
+            "name": "font"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "type": "INT",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "color",
+          "name": "color",
+          "type": "STRING",
+          "widget": {
+            "name": "color"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background_color",
+          "name": "background_color",
+          "type": "STRING",
+          "widget": {
+            "name": "background_color"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "shadow_distance",
+          "name": "shadow_distance",
+          "type": "INT",
+          "widget": {
+            "name": "shadow_distance"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "shadow_blur",
+          "name": "shadow_blur",
+          "type": "INT",
+          "widget": {
+            "name": "shadow_blur"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "shadow_color",
+          "name": "shadow_color",
+          "type": "STRING",
+          "widget": {
+            "name": "shadow_color"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "horizontal_align",
+          "name": "horizontal_align",
+          "type": "COMBO",
+          "widget": {
+            "name": "horizontal_align"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "vertical_align",
+          "name": "vertical_align",
+          "type": "COMBO",
+          "widget": {
+            "name": "vertical_align"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "offset_x",
+          "name": "offset_x",
+          "type": "INT",
+          "widget": {
+            "name": "offset_x"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "offset_y",
+          "name": "offset_y",
+          "type": "INT",
+          "widget": {
+            "name": "offset_y"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "direction",
+          "name": "direction",
+          "type": "COMBO",
+          "widget": {
+            "name": "direction"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            31
+          ]
+        },
+        {
+          "localized_name": "遮罩",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "产品名图层",
+      "properties": {
+        "Node name for S&R": "DrawText+"
+      },
+      "widgets_values": [
+        "馥郁鎏金\n邂逅持久魅力",
+        "NotoSansSC-VF.ttf",
+        58,
+        "#F6D58A",
+        "#00000000",
+        3,
+        4,
+        "#000000",
+        "center",
+        "top",
+        0,
+        85,
+        "ltr"
+      ],
+      "widgets_values_named": {
+        "text": "馥郁鎏金\n邂逅持久魅力",
+        "font": "NotoSansSC-VF.ttf",
+        "size": 58,
+        "color": "#F6D58A",
+        "background_color": "#00000000",
+        "shadow_distance": 3,
+        "shadow_blur": 4,
+        "shadow_color": "#000000",
+        "horizontal_align": "center",
+        "vertical_align": "top",
+        "offset_x": 0,
+        "offset_y": 85,
+        "direction": "ltr"
+      }
+    },
+    {
+      "id": 20,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        2800,
+        -200
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "值",
+          "name": "value",
+          "type": "STRING",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "字符串",
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            21
+          ]
+        }
+      ],
+      "title": "商品与促销信息（给文案API）",
+      "properties": {
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "你是中文电商海报文案师。请严格输出三行纯文本且不要任何标点符号。第一行必须原样写产品名 高端香水。第二行写四到十个汉字的自然卖点 只能使用汉字。第三行必须原样写价格 259元。不要添加其他内容 不要引号 不要编号 不要冒号 不要逗号 不要句号 不要货币符号。输出示例：\n高端香水\n馥郁留香优雅持久\n259元"
+      ],
+      "widgets_values_named": {
+        "value": "你是中文电商海报文案师。请严格输出三行纯文本且不要任何标点符号。第一行必须原样写产品名 高端香水。第二行写四到十个汉字的自然卖点 只能使用汉字。第三行必须原样写价格 259元。不要添加其他内容 不要引号 不要编号 不要冒号 不要逗号 不要句号 不要货币符号。输出示例：\n高端香水\n馥郁留香优雅持久\n259元"
+      }
+    },
+    {
+      "id": 22,
+      "type": "DashScopeQwenText",
+      "pos": [
+        3300,
+        -200
+      ],
+      "size": [
+        400,
+        262
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 21
+        },
+        {
+          "localized_name": "system_prompt",
+          "name": "system_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "region",
+          "name": "region",
+          "type": "COMBO",
+          "widget": {
+            "name": "region"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_key",
+          "name": "api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "temperature",
+          "name": "temperature",
+          "type": "FLOAT",
+          "widget": {
+            "name": "temperature"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "max_tokens",
+          "name": "max_tokens",
+          "type": "INT",
+          "widget": {
+            "name": "max_tokens"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            29
+          ]
+        }
+      ],
+      "title": "Qwen 官方 API 文案生成",
+      "properties": {
+        "Node name for S&R": "DashScopeQwenText"
+      },
+      "widgets_values": [
+        "",
+        "你是专业中文电商海报文案师。严格只输出三行最终文案 不要任何标点符号 不要解释 不要引号 不要 Markdown。",
+        "qwen-max",
+        "China",
+        "",
+        0.4,
+        96
+      ],
+      "widgets_values_named": {
+        "prompt": "",
+        "system_prompt": "你是专业中文电商海报文案师。严格只输出三行最终文案 不要任何标点符号 不要解释 不要引号 不要 Markdown。",
+        "model": "qwen-max",
+        "region": "China",
+        "api_key": "",
+        "temperature": 0.4,
+        "max_tokens": 96
+      }
+    },
+    {
+      "id": 26,
+      "type": "SaveImage",
+      "pos": [
+        890,
+        212
+      ],
+      "size": [
+        270,
+        270
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图片",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 35
+        },
+        {
+          "localized_name": "文件名前缀",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": []
+        }
+      ],
+      "title": "保存海报",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "poster_v1_qwen_api"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "poster_v1_qwen_api"
+      }
+    },
+    {
+      "id": 27,
+      "type": "SplitTextFields",
+      "pos": [
+        3200,
+        100
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 29
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "title",
+          "name": "title",
+          "type": "STRING",
+          "links": [
+            30
+          ]
+        },
+        {
+          "localized_name": "subtitle",
+          "name": "subtitle",
+          "type": "STRING",
+          "links": [
+            32
+          ]
+        },
+        {
+          "localized_name": "price",
+          "name": "price",
+          "type": "STRING",
+          "links": [
+            34
+          ]
+        }
+      ],
+      "title": "拆分产品名卖点价格",
+      "properties": {
+        "Node name for S&R": "SplitTextFields"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "widgets_values_named": {
+        "text": ""
+      }
+    },
+    {
+      "id": 28,
+      "type": "DrawText+",
+      "pos": [
+        3500,
+        520
+      ],
+      "size": [
+        400,
+        396
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "img_composite",
+          "name": "img_composite",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 31
+        },
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 32
+        },
+        {
+          "localized_name": "font",
+          "name": "font",
+          "type": "COMBO",
+          "widget": {
+            "name": "font"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "type": "INT",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "color",
+          "name": "color",
+          "type": "STRING",
+          "widget": {
+            "name": "color"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background_color",
+          "name": "background_color",
+          "type": "STRING",
+          "widget": {
+            "name": "background_color"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "shadow_distance",
+          "name": "shadow_distance",
+          "type": "INT",
+          "widget": {
+            "name": "shadow_distance"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "shadow_blur",
+          "name": "shadow_blur",
+          "type": "INT",
+          "widget": {
+            "name": "shadow_blur"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "shadow_color",
+          "name": "shadow_color",
+          "type": "STRING",
+          "widget": {
+            "name": "shadow_color"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "horizontal_align",
+          "name": "horizontal_align",
+          "type": "COMBO",
+          "widget": {
+            "name": "horizontal_align"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "vertical_align",
+          "name": "vertical_align",
+          "type": "COMBO",
+          "widget": {
+            "name": "vertical_align"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "offset_x",
+          "name": "offset_x",
+          "type": "INT",
+          "widget": {
+            "name": "offset_x"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "offset_y",
+          "name": "offset_y",
+          "type": "INT",
+          "widget": {
+            "name": "offset_y"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "direction",
+          "name": "direction",
+          "type": "COMBO",
+          "widget": {
+            "name": "direction"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            33
+          ]
+        },
+        {
+          "localized_name": "遮罩",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "副标题图层",
+      "properties": {
+        "Node name for S&R": "DrawText+"
+      },
+      "widgets_values": [
+        "Hello, World!",
+        "NotoSansSC-VF.ttf",
+        36,
+        "#F6D58A",
+        "#00000000",
+        3,
+        4,
+        "#000000",
+        "center",
+        "top",
+        0,
+        200,
+        "ltr"
+      ],
+      "widgets_values_named": {
+        "text": "Hello, World!",
+        "font": "NotoSansSC-VF.ttf",
+        "size": 36,
+        "color": "#F6D58A",
+        "background_color": "#00000000",
+        "shadow_distance": 3,
+        "shadow_blur": 4,
+        "shadow_color": "#000000",
+        "horizontal_align": "center",
+        "vertical_align": "top",
+        "offset_x": 0,
+        "offset_y": 200,
+        "direction": "ltr"
+      }
+    },
+    {
+      "id": 29,
+      "type": "DrawText+",
+      "pos": [
+        3950,
+        520
+      ],
+      "size": [
+        400,
+        396
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "img_composite",
+          "name": "img_composite",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 33
+        },
+        {
+          "localized_name": "text",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 34
+        },
+        {
+          "localized_name": "font",
+          "name": "font",
+          "type": "COMBO",
+          "widget": {
+            "name": "font"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "type": "INT",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "color",
+          "name": "color",
+          "type": "STRING",
+          "widget": {
+            "name": "color"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background_color",
+          "name": "background_color",
+          "type": "STRING",
+          "widget": {
+            "name": "background_color"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "shadow_distance",
+          "name": "shadow_distance",
+          "type": "INT",
+          "widget": {
+            "name": "shadow_distance"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "shadow_blur",
+          "name": "shadow_blur",
+          "type": "INT",
+          "widget": {
+            "name": "shadow_blur"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "shadow_color",
+          "name": "shadow_color",
+          "type": "STRING",
+          "widget": {
+            "name": "shadow_color"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "horizontal_align",
+          "name": "horizontal_align",
+          "type": "COMBO",
+          "widget": {
+            "name": "horizontal_align"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "vertical_align",
+          "name": "vertical_align",
+          "type": "COMBO",
+          "widget": {
+            "name": "vertical_align"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "offset_x",
+          "name": "offset_x",
+          "type": "INT",
+          "widget": {
+            "name": "offset_x"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "offset_y",
+          "name": "offset_y",
+          "type": "INT",
+          "widget": {
+            "name": "offset_y"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "direction",
+          "name": "direction",
+          "type": "COMBO",
+          "widget": {
+            "name": "direction"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            35
+          ]
+        },
+        {
+          "localized_name": "遮罩",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "价格图层",
+      "properties": {
+        "Node name for S&R": "DrawText+"
+      },
+      "widgets_values": [
+        "Hello, World!",
+        "NotoSansSC-VF.ttf",
+        72,
+        "#F6D58A",
+        "#00000000",
+        3,
+        4,
+        "#000000",
+        "center",
+        "top",
+        0,
+        1080,
+        "ltr"
+      ],
+      "widgets_values_named": {
+        "text": "Hello, World!",
+        "font": "NotoSansSC-VF.ttf",
+        "size": 72,
+        "color": "#F6D58A",
+        "background_color": "#00000000",
+        "shadow_distance": 3,
+        "shadow_blur": 4,
+        "shadow_color": "#000000",
+        "horizontal_align": "center",
+        "vertical_align": "top",
+        "offset_x": 0,
+        "offset_y": 1080,
+        "direction": "ltr"
+      }
+    },
+    {
+      "id": 30,
+      "type": "CLIPTextEncode",
+      "pos": [
+        1560,
+        620
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "clip",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 36
+        },
+        {
+          "localized_name": "文本",
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 37
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "条件",
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            38
+          ]
+        }
+      ],
+      "title": "本地负向条件（实际生效）",
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "widgets_values_named": {
+        "text": ""
+      }
+    }
+  ],
+  "links": [
+    [
+      1,
+      3,
+      0,
+      1,
+      1,
+      "STRING"
+    ],
+    [
+      2,
+      4,
+      0,
+      1,
+      2,
+      "STRING"
+    ],
+    [
+      4,
+      5,
+      0,
+      8,
+      0,
+      "MODEL"
+    ],
+    [
+      5,
+      8,
+      0,
+      12,
+      0,
+      "MODEL"
+    ],
+    [
+      6,
+      6,
+      0,
+      9,
+      0,
+      "CLIP"
+    ],
+    [
+      7,
+      3,
+      0,
+      9,
+      1,
+      "STRING"
+    ],
+    [
+      8,
+      9,
+      0,
+      10,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      10,
+      9,
+      0,
+      12,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      11,
+      11,
+      0,
+      12,
+      3,
+      "LATENT"
+    ],
+    [
+      12,
+      12,
+      0,
+      13,
+      0,
+      "LATENT"
+    ],
+    [
+      13,
+      7,
+      0,
+      13,
+      1,
+      "VAE"
+    ],
+    [
+      17,
+      13,
+      0,
+      17,
+      0,
+      "IMAGE"
+    ],
+    [
+      21,
+      20,
+      0,
+      22,
+      0,
+      "STRING"
+    ],
+    [
+      29,
+      22,
+      0,
+      27,
+      0,
+      "STRING"
+    ],
+    [
+      30,
+      27,
+      0,
+      17,
+      1,
+      "STRING"
+    ],
+    [
+      31,
+      17,
+      0,
+      28,
+      0,
+      "IMAGE"
+    ],
+    [
+      32,
+      27,
+      1,
+      28,
+      1,
+      "STRING"
+    ],
+    [
+      33,
+      28,
+      0,
+      29,
+      0,
+      "IMAGE"
+    ],
+    [
+      34,
+      27,
+      2,
+      29,
+      1,
+      "STRING"
+    ],
+    [
+      35,
+      29,
+      0,
+      26,
+      0,
+      "IMAGE"
+    ],
+    [
+      36,
+      6,
+      0,
+      30,
+      0,
+      "CLIP"
+    ],
+    [
+      37,
+      4,
+      0,
+      30,
+      1,
+      "STRING"
+    ],
+    [
+      38,
+      30,
+      0,
+      12,
+      2,
+      "CONDITIONING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "comfyui_mcp": {
+      "workflow_uuid": "fed728c9-751b-4d0c-88a4-f7ad52e61482",
+      "workflow_path": "workflows/Poster_V1_Qwen_API_本地保存.json"
+    },
+    "ds": {
+      "scale": 0.14934354485776805,
+      "offset": [
+        3149.48717948718,
+        2128.859584859585
+      ]
+    }
+  },
+  "version": 0.4
+}
